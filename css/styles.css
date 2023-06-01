@@ -1,0 +1,423 @@
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  background-color: grey;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+
+/* Images, Logos and Links */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sig-font {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 20pt;
+}
+
+
+/* ensure that there is a certain min height despite content */
+.main-container{
+  min-height: 150vh;
+  background-color: tan;
+}
+
+.Amazonlogo {
+  height: .1em;
+  padding: .5em;
+}
+
+.FBlogo {
+  height: .1em;
+  padding: .5em;
+}
+
+.logo {
+  width: 30%;
+  height: 40%;
+}
+
+.links {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1E4C76;
+  padding-bottom: 1.5em;
+}
+
+.linksNoBr {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1E4C76;
+  padding-bottom: .3em;
+}
+
+.links:hover,
+.links:focus {
+  color: blue;
+}
+
+/* Containers and whatnot */
+.container {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 7em;
+  text-align: left;
+}
+
+.pageTitle {
+  text-align: center;
+  margin-top: 7em;
+  width: 100%;
+}
+
+.announcements {
+  text-align: left;
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* typography */
+.title {
+  font-size: 2.5rem;
+}
+
+.title span {
+  font-weight: 300;
+  display: block;
+}
+
+.updateBanner {
+  background-color: yellow;
+}
+
+@media (min-width: 60rem) {
+  .title{
+    font-size: 3.7rem;
+  }
+
+  .container{
+    margin-top: 5em;
+  }
+
+}
+
+/* header and nav */
+
+header {
+  position: absolute;
+  width: 100%;
+  margin-top: 0;
+  padding-top: .5em;
+  background-color: grey;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: .4em;
+  margin-top: 1em;
+}
+
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: .3em;
+  color: #000;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #DDD;
+}
+
+/* to account for different screen sizes */
+@media (min-width: 60rem) {
+  .logo{
+    float:left;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav a {
+    font-size: 16pt;
+  }
+}
+
+/* iFrames (calendar, Map, etc.)*/
+.cal {
+  margin-top: 1em;
+  width: 80vw;
+  height: 50vh;
+  margin-left: 10%;
+}
+
+.BigCal {
+  margin-top: 1em;
+  width: 90%;
+  height: 50vh;
+  margin-left: 5%;
+}
+
+.maps {
+  width: 70vw;
+  height: 40vh;
+  margin: 2em;
+  margin-top: .2em;
+  margin-left: 15%;
+}
+
+.meeting-description-text {
+  font-weight: 900;
+  padding: .5em;
+  margin: 1em;
+}
+
+.social_media_mobile {
+  display: inline-flex;
+  margin-left: -8em;
+}
+
+/* contains map, facebook, youtube, instagram embedded links */
+.info-area {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+/* contains map, facebook, youtube, instagram embedded links - for mobile */
+.info-area-mobile {
+  visibility: visible;
+  display: grid;
+  background-color: grey;
+}
+
+.usgs-waterlevels{
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+  margin-top: 1em;
+}
+
+.body-map {
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+}
+
+.body-img {
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+}
+
+.body-img-sm {
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+}
+
+.body-img-mid {
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+}
+
+/* desktop views/larger views */
+@media (min-width: 60rem) {
+  nav li {
+    display: inline-block;
+    margin: 1em;
+  }
+  .usgs-waterlevels{
+    width: 40%;
+    height: 40%;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .body-img {
+    width: 60%;
+    height: 40%;
+    margin-left: 0;
+  }
+
+  .body-img-sm {
+    width: 25%;
+    margin-left: 0;
+  }
+
+  .body-img-mid {
+    width: 34%;
+    margin-left: 0;
+  }
+
+  .body-map {
+    width: 40%;
+    height: 40%;
+    margin-left: 0;
+  }
+
+  .YTPlaylist{
+    width:560px;
+    height:315px;
+  }
+
+  .cal {
+    margin-top: 1em;
+    width: 26vw;
+    height: 40vh;
+    margin-left: 5%;
+  }
+
+  .BigCal {
+    margin-top: 1em;
+    width: 100%;
+    height: 80vh;
+    margin-left: 5%;
+  }
+
+  .maps {
+    width: 20vw;
+    height: 20vh;
+    margin-left: 15%;
+  }
+
+  .meeting-description-text {
+    font-weight: 900;
+    padding: .5em;
+    margin: 1em;
+    margin-bottom: -.5em;
+  }
+
+  .info-area {
+    visibility: visible;
+    position: relative;
+    z-index: 100;
+    float: right;
+    width: 30vw;
+    height: 18em;
+    margin-top: 12.5em;
+    display: inline-grid;
+    margin-bottom: 0;
+    /*background-color: #ccc;*/
+  }
+
+  /* contains map, facebook, youtube embedded links */
+  .info-area-mobile {
+    visibility: hidden;
+    display: none;
+  }
+
+  .Amazonlogo {
+    width: 20%;
+    padding: .5em;
+  }
+
+  .FBlogo {
+    width: 20%;
+    padding: .5em;
+  }
+
+}
+
+/* footer */
+footer {
+  display:inline-block;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: .5em;
+  text-align: center;
+}
+
+/* contact form */
+.form-group {
+  text-align:left;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-weight: normal;
+}
+
+.contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* button */
+.contactSubmitButton {
+  box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#3d94f6;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
+.contactSubmitButton:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+.contactSubmitButton:active {
+	position:relative;
+	top:1px;
+}
